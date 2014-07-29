@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="PlayerRespawnM">
+    <output-path>$PROJECT_DIR$/out/artifacts/PlayerRespawnM</output-path>
+    <root id="archive" name="PlayerRespawnM.jar">
+      <element id="module-output" name="PlayerRespawnM" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
