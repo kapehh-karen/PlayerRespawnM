@@ -45,12 +45,8 @@ public class PlayerRespawnM extends JavaPlugin {
         }
 
         instance = this;
-
         permission = PluginVault.setupPermissions();
-
-        PluginConfig pluginConfig = new PluginConfig(this);
-        pluginConfig.addEventClasses(new PlayerRespawnMConfig(pluginConfig)).setup().loadData();
-
+        respawnMCollection = new PlayerRespawnMCollection();
         getServer().getPluginManager().registerEvents(new PlayerRespawnMListener(), this);
     }
 }
