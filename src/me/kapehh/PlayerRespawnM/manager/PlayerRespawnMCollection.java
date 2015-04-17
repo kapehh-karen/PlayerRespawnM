@@ -30,17 +30,29 @@ public class PlayerRespawnMCollection {
             }
         }
         mapRespawnWorld = map;
+
+        // TODO: Remove
+        //System.out.println("init() mapRespawnWorld: " + map.toString());
     }
 
     public Location process(Player player) {
+        // TODO: Remove
+        //System.out.println("process player: " + player.getName());
+
         Permission permission = PlayerRespawnM.getPermission();
         Set<String> keys = mapRespawnWorld.keySet();
         for (String k : keys) {
             if (permission.has(player, k)) {
                 World world = mapRespawnWorld.get(k);
+
+                // TODO: Remove
+                //System.out.println(">> player: " + player.getName() + " has perms: " + k + " tp to: " + world.getSpawnLocation());
                 return world.getSpawnLocation();
             }
         }
+
+        // TODO: Remove
+        //System.out.println("<< player: " + player.getName() + " hasnt perms");
         return null;
     }
 }

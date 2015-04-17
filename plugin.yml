@@ -2,3 +2,4 @@ name: PlayerRespawnM
 main: me.kapehh.PlayerRespawnM.PlayerRespawnM
 author: kapehh
 version: 1.0.0
+depend: ['PermissionsEx', 'Multiverse-Core']
